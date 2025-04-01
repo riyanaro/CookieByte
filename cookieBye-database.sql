@@ -131,4 +131,12 @@ CREATE TABLE TransactionDetails (
     FOREIGN KEY (MenuItemID) REFERENCES MenuItem(ItemID)
 );
 
+ALTER TABLE Manager
+RENAME COLUMN Name to FirstName,
+ADD LastName varchar (100);
+
+ALTER TABLE Employee
+RENAME COLUMN Name to FirstName,
+ADD LastName varchar (100);
+
 
