@@ -44,7 +44,7 @@ VALUES (1, 'Baking Tray', 30.99, 7),
 INSERT INTO OrderQuantity(OrderQuantityID, OrderID, IngredientID, MaterialsID, EquipmentID, IngredientQuantity,
                           MaterialQuantity, EquipmentQuantity)
 VALUES (1, 1, 1, NULL, NULL, 10, NULL, NULL),  -- 10 units of Espresso Beans for OrderID 1
-       (2, 1, 3, NULL, NULL, 8, NULL, NULL),   -- 8 units of Butter for OrderID 1
+       (2, 2, 3, NULL, NULL, 8, NULL, NULL),   -- 8 units of Butter for OrderID 1
        (3, 2, 2, NULL, NULL, 15, NULL, NULL),  -- 15 units of Whole Milk for OrderID 2
        (4, 2, 4, NULL, NULL, 20, NULL, NULL),  -- 20 units of Flour for OrderID 2
        (5, 1, NULL, 1, NULL, NULL, 200, NULL), -- 200 units of Coffee Cups for OrderID 1
@@ -77,11 +77,3 @@ VALUES (1, 1, 3, '2025-04-01 10:00:00'),
        (4, 4, 1, '2025-03-31 10:00:00'),
        (5, 5, 7, '2025-03-30 10:00:00'),
        (6, 8, 8, '2025-03-30 10:00:00');
-
-
-
-
-
-
-
-
