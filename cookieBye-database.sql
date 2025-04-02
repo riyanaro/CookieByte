@@ -97,7 +97,7 @@ DROP TABLE IF EXISTS OrderQuantity;
 CREATE TABLE OrderQuantity
 (
     OrderQuantityID    INT UNIQUE PRIMARY KEY AUTO_INCREMENT,
-    OrderID            INT UNIQUE,
+    OrderID            INT,
     IngredientID       INT UNIQUE DEFAULT NULL,
     MaterialsID        INT UNIQUE DEFAULT NULL,
     EquipmentID        INT UNIQUE DEFAULT NULL,
