@@ -1,4 +1,4 @@
-# Creating a new database called CookieByte
+# Create a new database called CookieByte
 CREATE DATABASE CookieByte;
 # Set CookieByte as the current database
 USE CookieByte;
