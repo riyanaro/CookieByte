@@ -50,6 +50,7 @@ CREATE TABLE SupplyOrder
     OrderQuantity INT,
     DateOrdered   DATETIME,
     DeliveryDate  DATETIME,
+    Delivered     BOOLEAN,
     CONSTRAINT fk_1 FOREIGN KEY (`SupplierID`) REFERENCES Supplier (`ID`)
         ON UPDATE RESTRICT ON DELETE CASCADE,
     CONSTRAINT fk_2 FOREIGN KEY (`ManagerID`) REFERENCES Manager (`ID`)
