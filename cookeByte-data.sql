@@ -68,10 +68,10 @@ INSERT INTO Employee(ID, FirstName, Position, Wage, HoursWorked, ManagerID, Last
             (1, 'Connor', 'Cashier', 15, 20, 1, 'Singh'),
             (2, 'Pearl', 'Baker', 25, 40,1,  'Thepnakorn' );
 
-INSERT INTO Costs(CostID, Type, PaymentDate, PaymentAmount, ManagerID, SupplyOrderID)
-     VALUES
-            (1, 'Labor', '2025-03-24', 1500.00, 1, NULL),
-            (2, 'Supplies', '2025-03-15', 750.50, 2, 1);
+# INSERT INTO Costs(CostID, Type, PaymentDate, PaymentAmount, ManagerID, SupplyOrderID)
+#      VALUES
+#             (1, 'Labor', '2025-03-24', 1500.00, 1, NULL),
+#             (2, 'Supplies', '2025-03-15', 750.50, 2, 1);
 
 INSERT INTO Sales(SalesID, Date, TotalSales)
      VALUES
@@ -87,6 +87,8 @@ INSERT INTO TransactionDetails(SalesID, MenuItemID, MenuItemQuantity, Date)
         (2, 4, 1, '2025-03-31'),
         (3, 1, 2, '2025-03-30'),
         (3, 8, 3, '2025-03-30');
+
+
 
 
 
