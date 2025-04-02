@@ -1,5 +1,5 @@
 # Creating a new database called CookieByte
-#CREATE DATABASE CookieByte;
+CREATE DATABASE CookieByte;
 # Set CookieByte as the current database
 USE CookieByte;
 
@@ -159,7 +159,7 @@ CREATE TABLE TransactionDetails
     MenuItemID       INT UNIQUE NOT NULL, -- Foreign Key to MenuItem
     MenuItemQuantity INT        NOT NULL,
     Date             DATETIME   NOT NULL,
-    EmployeeID       INT UNIQUE NOT NULL,
+    EmployeeID       INT UNIQUE,
     PRIMARY KEY (SalesID, MenuItemID),
     CONSTRAINT fk_9 FOREIGN KEY (`SalesID`) REFERENCES Sales (`SalesID`)
         ON UPDATE RESTRICT ON DELETE CASCADE,
@@ -168,4 +168,3 @@ CREATE TABLE TransactionDetails
     CONSTRAINT fk_11 FOREIGN KEY (`EmployeeID`) REFERENCES Employee (`ID`)
         ON UPDATE RESTRICT ON DELETE SET NULL
 );
-
