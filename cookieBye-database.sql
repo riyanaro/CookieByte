@@ -1,4 +1,4 @@
-# Create a new database called CookieByte
+# Creating a new database called CookieByte
 CREATE DATABASE CookieByte;
 # Set CookieByte as the current database
 USE CookieByte;
@@ -50,7 +50,7 @@ CREATE TABLE SupplyOrder
     OrderQuantity INT,
     DateOrdered   DATETIME,
     DeliveryDate  DATETIME,
-    Delivered     BOOLEAN,
+    Delivered     BOOLEAN DEFAULT FALSE,
     CONSTRAINT fk_1 FOREIGN KEY (`SupplierID`) REFERENCES Supplier (`ID`)
         ON UPDATE RESTRICT ON DELETE CASCADE,
     CONSTRAINT fk_2 FOREIGN KEY (`ManagerID`) REFERENCES Manager (`ID`)
